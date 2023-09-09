@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hcode.com.br</title>
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        footer {
+            background-color: #f5dcf3;
+            grid-row: -2 / -1;
+            grid-column: 1 / -1;
+        }
+
+        section {
+            background-color: #eaffbc;
+            grid-column: 2 / -1;
+        }
+
+        nav {
+            background-color: #99d8ff;
+            grid-row: 2 / -2;
+        }
+
+        header {
+            background-color: #fbd4d4;
+            grid-column: 1 / -1;
+            grid-row: 1 / 2;
+        }
+
+        main > article {
+            background-color: aquamarine;
+        }
+
+        .grid-wrapper > main {
+            display: grid;
+            grid-auto-rows: auto;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .grid-wrapper{
+            min-height: 700px;
+            border-radius: 4px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .grid-wrapper{
+            display: grid;
+            grid-template-rows: 100px repeat(3, 1fr) 100px;
+            grid-template-columns: 240px 1fr;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-wrapper">
+        <header>header</header>
+        <nav>nav</nav>
+        <section>section</section>
+        <main>
+            <article>article</article>
+            <article>article</article>
+            <article>article</article>
+            <article>article</article>
+            <article>article</article>
+        </main>
+        <footer>footer</footer>
+    </div>
+
+</body>
+</html>

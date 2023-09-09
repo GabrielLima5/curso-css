@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hcode.com.br</title>
+    <style type="text/css">
+        body{
+            margin: 0px;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container{
+            width: 70vw;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            box-shadow: 0px 0px 0px 10px rgba(100, 100, 100, .2);
+            margin: 2% auto;
+        }
+
+        .container > div{
+            height: 150px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: alt .2s ease-in-out;
+            flex-basis: 100px;
+        }
+
+        .container > div:nth-child(1){
+            flex-shrink: 3;
+        }
+
+        .container > div.A{
+            order: 3;
+        }
+
+        .container > div.B{
+            order: -1;
+        }
+
+        .container > div.C{
+            order: 0;
+        }
+
+        .container > div.D{
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="A">A</div>
+        <div class="B">B</div>
+        <div class="C">C</div>
+        <div class="D">D</div>
+    </div>
+
+</body>
+</html>

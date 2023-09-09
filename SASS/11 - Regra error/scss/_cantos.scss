@@ -1,0 +1,12 @@
+$raio: 8px !default;
+
+@mixin arredondado {
+    border-radius: $raio;
+    @if $raio > 50px{
+        @error "Raio muito grande."
+    }
+};
+
+@mixin circulo {
+    border-radius: 50%;
+}

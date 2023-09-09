@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            grid-gap: 10px;
+        }
+
+        body > div{
+            border: #ccc 3px solid;
+            transition: all .2s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body > div:hover{
+            border-color: yellow;
+            font-weight: bold;
+        }
+
+        div.cursor-default{
+            cursor: default;
+        }
+
+        div.cursor-pointer{
+            cursor: pointer;
+        }
+
+        div.cursor-alias{
+            cursor: alias;
+        }
+
+        div.cursor-allscroll{
+            cursor: all-scroll;
+        }
+
+        div.cursor-auto{
+            cursor: auto;
+        }
+
+        div.cursor-cell{
+            cursor: cell;
+        }
+
+        div.cursor-colresize{
+            cursor: col-resize;
+        }
+
+        div.cursor-context-menu{
+            cursor: context-menu;
+        }
+
+        div.cursor-copy{
+            cursor: copy;
+        }
+
+        div.cursor-crosshair{
+            cursor: crosshair;
+        }
+
+        div.cursor-eresize{
+            cursor: e-resize;
+        }
+
+        div.cursor-ewresize{
+            cursor: ew-resize;
+        }
+
+        div.cursor-neswresize{
+            cursor: nesw-resize;
+        }
+
+        div.cursor-nwseresize{
+            cursor: nwse-resize;
+        }
+
+        div.cursor-sresize{
+            cursor: s-resize;
+        }
+
+        div.cursor-wresize{
+            cursor: w-resize;
+        }
+
+        div.cursor-nresize{
+            cursor: n-resize;
+        }
+
+        div.cursor-nsresize{
+            cursor: ns-resize;
+        }
+
+        div.cursor-seresize{
+            cursor: se-resize;
+        }
+
+        div.cursor-neresize{
+            cursor: ne-resize;
+        }
+
+        div.cursor-nwresize{
+            cursor: nw-resize;
+        }
+
+        div.cursor-swresize{
+            cursor: sw-resize;
+        }
+
+        div.cursor-grab{
+            cursor: grab;
+        }
+
+        div.cursor-grabbing{
+            cursor: grabbing;
+        }
+
+        div.cursor-help{
+            cursor: help;
+        }
+
+        div.cursor-move{
+            cursor: move;
+        }
+
+        div.cursor-nodrop{
+            cursor: no-drop;
+        }
+
+        div.cursor-none{
+            cursor: none;
+        }
+
+        div.cursor-notallowed{
+            cursor: not-allowed;
+        }
+
+        div.cursor-progress{
+            cursor: progress;
+        }
+
+        div.cursor-rowresize{
+            cursor: row-resize;
+        }
+
+        div.cursor-text{
+            cursor: text;
+        }
+
+        div.cursor-verticaltext{
+            cursor: vertical-text;
+        }
+
+        div.cursor-wait{
+            cursor: wait;
+        }
+
+        div.cursor-zoomin{
+            cursor: zoom-in;
+        }
+
+        div.cursor-zoomout{
+            cursor: zoom-out;
+        }
+
+        div.cursor-url{
+            cursor: url(hcode.svg), pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="cursor-default">Default</div>
+    <div class="cursor-pointer">Pointer</div>
+    <div class="cursor-alias">Alias</div>
+    <div class="cursor-allscroll">Allscroll</div>
+    <div class="cursor-auto">Auto</div>
+    <div class="cursor-cell">Cell</div>
+    <div class="cursor-colresize">Col=resize</div>
+    <div class="cursor-context-menu">Context-menu</div>
+    <div class="cursor-copy">Copy</div>
+    <div class="cursor-crosshair">Crosshair</div>
+    <div class="cursor-eresize">E-resize</div>
+    <div class="cursor-ewresize">EW-resize</div>
+    <div class="cursor-neswresize">NESW-resize</div>
+    <div class="cursor-nwseresize">NWSE-resize</div>
+    <div class="cursor-sresize">S-resize</div>
+    <div class="cursor-wresize">W-resize</div>
+    <div class="cursor-nresize">N-resize</div>
+    <div class="cursor-nsresize">NS-resize</div>
+    <div class="cursor-seresize">SE-resize</div>
+    <div class="cursor-neresize">NE-resize</div>
+    <div class="cursor-nwresize">NW-resize</div>
+    <div class="cursor-swresize">SW-resize</div>
+    <div class="cursor-grab">Grab</div>
+    <div class="cursor-grabbing">Grabbing</div>
+    <div class="cursor-help">Help</div>
+    <div class="cursor-move">Move</div>
+    <div class="cursor-nodrop">No-drop</div>
+    <div class="cursor-none">None</div>
+    <div class="cursor-notallowed">Not-allowed</div>
+    <div class="cursor-progress">Progress</div>
+    <div class="cursor-rowresize">Row-resize</div>
+    <div class="cursor-text">Text</div>
+    <div class="cursor-verticaltext">Vertical-text</div>
+    <div class="cursor-wait">Wait</div>
+    <div class="cursor-zoomin">Zoomin</div>
+    <div class="cursor-zoomout">Zoomout</div>
+    <div class="cursor-url">URL</div>
+</body>
+</html>

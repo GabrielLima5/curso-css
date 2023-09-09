@@ -1,0 +1,8 @@
+$x: 1;
+
+@while $x < 6{
+    .paragraph-#{$x}{
+        font-size: 10px*$x;
+    }
+    $x: $x + 1;
+}

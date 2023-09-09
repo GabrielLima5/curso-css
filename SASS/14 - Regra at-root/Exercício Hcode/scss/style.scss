@@ -1,0 +1,18 @@
+@use "sass:selector";
+
+@mixin field($child) {
+    @at-root #{selector.unify(&, "input")}{
+        padding: 10px;
+        border: gray 1px solid;
+        margin: 10px;
+    }
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+
+    .field{
+        @include field("input");
+        @include field("select");
+    }
+}

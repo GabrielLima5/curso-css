@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hcode.com.br</title>
+    <style type="text/css">
+        body{
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: #CCC;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            align-items: end;
+            justify-items: end;
+        }
+
+        body > div {
+            background-color: #00ff0066;
+            border: green 2px solid;
+            width: 50px;
+            height: 50px;
+            place-self: center;
+        }
+
+        body > div:nth-child(3){
+            place-self: end left;
+        }
+    </style>
+</head>
+<body>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>    
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>    
+
+</body>
+</html>

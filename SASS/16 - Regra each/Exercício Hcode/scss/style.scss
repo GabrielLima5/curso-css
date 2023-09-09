@@ -1,0 +1,8 @@
+$sizes: ("xs": 50px, "sm": 100px, "md": 150px);
+@each $key, $value in $sizes{
+    .#{$key} {
+        width: $value;
+        height: $value;
+        border-radius: 50%;
+    }
+}

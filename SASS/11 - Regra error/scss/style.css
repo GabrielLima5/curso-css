@@ -1,0 +1,17 @@
+/* Error: "Raio muito grande."
+ *    ,
+ * 45 |             @include hcode.arredondado;
+ *    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   11 - Regra error\scss\style.scss 45:13  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: "Raio muito grande."\a    \2577 \a 45 \2502              @include hcode.arredondado;\d\a    \2502              ^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   11 - Regra error\\scss\\style.scss 45:13  root stylesheet';
+}

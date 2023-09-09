@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hcode.com.br</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+        header {
+            background-color: #fbd4d4;
+            grid-area: header;
+        }
+        
+        section {
+            background-color: #eaffbc;
+            grid-area: section;
+        }
+
+        nav {
+            background-color: #99d8ff;
+            grid-area: nav;
+        }
+
+        footer {
+            background-color: #f5dcf3;
+            grid-area: footer;
+        }
+        
+        .grid-wrapper{
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-columns: 240px 1fr;
+            gap: 1rem;
+            grid-template-areas: 
+                "header header"
+                "nav section"
+                "nav footer";
+        }
+
+        @media only screen and (max-width: 600px){
+            nav{
+                display: none;
+            }
+            
+            .grid-wrapper{
+                grid-template-areas: 
+                    "header header"
+                    "section section"
+                    "footer footer";
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-wrapper">
+        <header>header</header>
+        <nav>nav</nav>
+        <section>sections</section>
+        <footer>footer</footer>
+    </div>
+
+</body>
+</html>

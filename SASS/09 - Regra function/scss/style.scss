@@ -1,0 +1,106 @@
+@use "hcode" with (
+    $color-primary: #ff760c
+);
+
+@use "mycolor";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    $color: black;
+    color: hcode.$color-color;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+#chat{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 20px;
+    list-style: none;
+
+    li{
+        display: flex;
+        margin-bottom: 32px;
+
+        .avatar{
+            padding: 0px 16px;
+            display: flex;
+            align-items: flex-end;
+
+            img{
+                @include hcode.circulo;
+                border-radius: circulo;
+                width: 48px;
+            }
+        }
+
+        .message{
+            @include hcode.arredondado;
+            $background-color: #f5f6fa;
+            flex: 1;
+            background-color: $background-color;
+            padding: 16px;
+            border-radius: arredondado;
+            border-bottom-left-radius: 0px;
+
+            strong{
+                color: #242939;
+            }
+
+            p{
+                font-size: 14px;
+            }
+
+            time{
+                font-size: 12px;
+                letter-spacing: 2px;
+                opacity: .65;
+            }
+        }
+
+        .menu{
+            display: flex;
+            align-items: center;
+            
+            button{
+                outline: none;
+                border: none;
+                background-color: none;
+                
+                img{
+                    width: 16px;
+                    opacity: .5;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &.me{
+            $background-color: hcode.$color-primary;
+            flex-direction: row-reverse;
+            color: white;
+
+            .message{
+                background-color: mycolor.invert(hcode.$color-primary);
+                border-bottom-left-radius: hcode.$raio;
+                border-bottom-right-radius: 0;
+
+                ::selection{
+                    background-color: white;
+                    color: hcode.$color-primary;
+
+                }
+            }
+
+            strong{
+                display: none;
+            }
+        }
+    }  
+}

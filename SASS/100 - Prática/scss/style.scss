@@ -1,0 +1,8 @@
+@use "bootstrap";
+
+body{
+    @include bootstrap.body-reset;
+}
+li{
+    @include bootstrap.list-reset;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display: grid</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: 300px 300px 300px 300px 300px;
+            grid-template-rows: 300px 300px 300px 300px 300px;
+            width: 80vw;
+            height: 80vh;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .grid-items{
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-items">AAAAA</div>
+        <div class="grid-items">BBBBBBBBBB</div>
+        <div class="grid-items">CCCCCCCCCCCCC</div>
+        <div class="grid-items">DDDDDDDDDDD</div>
+        <div class="grid-items">EEEEEEEEEEEEEEE</div>
+        <div class="grid-items">FFFFFFFFFFF</div>
+        <div class="grid-items">GGGGGGGGGG</div>
+        <div class="grid-items">HHHHHHHHHHHHH</div>
+        <div class="grid-items">IIIIIIIIIIII</div>
+        <div class="grid-items">JJJJJJJJJJJJ</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hcode.com.br</title>
+    <style type="text/css">
+        body{
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div{
+            width: 64px;
+            height: 64px;
+            border: 1px solid black;
+            margin: 10px;
+            background-image: url(google.png);
+            transition-duration: 0.8s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            
+        }
+
+        div.icon1{
+            background-position: 0 calc(-69px * 1);
+        }
+
+        div.icon2{
+            background-position: 0 calc(-69px * 2);
+        }
+
+        div.icon3:hover{
+            background-position: 0 calc(-69px * 3);
+        }
+
+        div.icon4{
+            background-position: 0 calc(-69px * 20);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="icon1"></div>
+    <div class="icon2"></div>
+    <div class="icon3"></div>
+    <div class="icon4"></div>
+
+</body>
+</html>

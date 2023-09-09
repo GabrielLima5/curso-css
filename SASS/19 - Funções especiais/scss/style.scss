@@ -1,0 +1,17 @@
+$font: "../fonts/Open_Sans/static/OpenSans/";
+@font-face {
+    font-family: "OpenSans Regular";
+    src: url($font + "OpenSans-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "OpenSans Light";
+    src: url($font + "OpenSans-Light.ttf");
+    font-weight: 300;
+}
+
+body{
+    font-family: "OpenSans Light";
+    font-size: 20px;
+}

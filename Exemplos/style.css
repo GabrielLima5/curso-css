@@ -1,0 +1,42 @@
+body{
+    background-color: #17181c;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 400px;
+}
+
+#posicao{
+    position: sticky;
+    width: 50%;
+    height: 400px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#posicao:hover .pulse{
+    bottom: 0;
+}
+.pulse{
+    background: none;
+    color: #FF760C;
+    border: 2px solid;
+    margin: 0px;
+    padding: 15px 40px;
+    transition: 0.25s;
+}
+
+.pulse:hover, .pulse:focus{
+    color:#FFF;
+    border-color: #ef8f6e;
+    box-shadow: 0 0 0 15px rgba(255,255,255,0);
+    animation: pulsar 1s;
+}
+
+@keyframes pulsar {
+    0%{
+        box-shadow: 0 0 0 0 #ef8f6e;
+    }
+}

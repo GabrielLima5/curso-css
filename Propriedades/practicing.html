@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hcode.com.br</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
+        .container > div{
+            flex-basis: 100px;
+            height: 200px;
+            background-color: red;
+            border: 1px solid black;
+        }
+
+        .container > div:nth-child(3){
+            background-color: blue;
+            order: 2;
+        }
+
+        .container > div:nth-child(1){
+            background-color: green;
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</body>
+</html>

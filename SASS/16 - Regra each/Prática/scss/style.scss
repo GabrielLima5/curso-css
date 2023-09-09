@@ -1,0 +1,5 @@
+@each $color in blue, black, yellow{
+    .#{$color}-background{
+        background-color: $color;
+    }
+}

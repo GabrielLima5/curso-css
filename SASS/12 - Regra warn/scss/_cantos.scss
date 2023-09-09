@@ -1,0 +1,13 @@
+$raio: 10px;
+
+@mixin arredondado {
+    border-radius: $raio;
+    @if $raio > 50px{
+        @error "Raio muito grande."
+    }
+};
+
+@mixin circulo {
+    @warn "Deprecated";
+    border-radius: 50%;
+}
