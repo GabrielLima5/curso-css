@@ -1,8 +1,9 @@
-# <p align="center">Curso "Dominando CSS3 com SASS" da Hcode Treinamentos</p>
+# <p align="center">Curso "Dominando CSS3 com SASS" - Hcode</p>
 
 <p align="center">
     <img src="https://github.com/GabrielLima5/curso-css-hcode/blob/main/Certificado/certificado.jpg"> 
 </p>
+
 Este repositório inclui todos os recursos do curso **Dominando CSS com SASS** da <a href="https://hcode.com.br/">Hcode Treinamentos</a>, bem como exemplos de código, exercícios práticos e materiais didáticos. Realizei esse curso durante o período de 12 de dezembro de 2022 a 6 de janeiro de 2023.
 
 ## Sobre o Curso
